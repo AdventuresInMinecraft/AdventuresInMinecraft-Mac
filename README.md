@@ -18,7 +18,9 @@ The structure of the StarterKit is as follows:
   * MyAdventures : folder to save the minecraft programs too
     * mcpi : python api library distributed with Minecraft: Pi Edition and minecraftstuff libraries
     * anyio : python library which contains the library to control the 7 segment display
+    * microbit : python library which contains the library to control the microbit
     * findPort.py : a python program used in adventure 5 to find the com port a connected arduino uses
+    * bitio.hex : the bitio microbit program which should be copied to the BBC micro:bit
   * StartServer.command : a bash script used to start the minecraft server
 
 ## StarterKit Creation Guide
@@ -49,7 +51,7 @@ java -Xms1024M -Xmx1024M -jar craftbukkit.jar
 PAUSE
 ```
 
-4. Save the file to the `Server` folder as `start.bat`.  The start.bat file is a windows batch program which will startup the Minecraft server when it is run.
+4. Save the file to the `Server` folder as `start.command`.  The start.command file is a bash program which will startup the Minecraft server when it is run.
 
 5. Double-click the `start.command` file to run it and startup the server.
 
