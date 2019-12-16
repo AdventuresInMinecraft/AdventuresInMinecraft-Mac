@@ -15,7 +15,7 @@ JAVA_VER_BUILD=""
 
 for token in $(java -version 2>&1 | grep -i version)
 do
-    if [[ $token =~ \"([[:digit:]])\.([[:digit:]])\.(.*)\" ]]
+    if [[ $token =~ \"([[:digit:]]+)\.([[:digit:]]+)\.(.*)\" ]]
     then
         JAVA_VER_MAJOR=${BASH_REMATCH[1]}
         JAVA_VER_MINOR=${BASH_REMATCH[2]}
